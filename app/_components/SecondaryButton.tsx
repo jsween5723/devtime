@@ -1,6 +1,6 @@
 "use client";
 import styles from "./Button.module.css";
-import primaryButtonStyles from "./PrimaryButton.module.css";
+import secondaryButtonStyles from "./SecondaryButton.module.css";
 
 export default function PrimaryButton({
   text,
@@ -12,7 +12,7 @@ export default function PrimaryButton({
   return (
     <button
       onClick={onClickAction}
-      className={[styles.button, primaryButtonStyles.button].join(" ")}
+      className={[styles.button, secondaryButtonStyles.button].join(" ")}
     >
       {text}
     </button>

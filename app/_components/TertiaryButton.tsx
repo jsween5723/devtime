@@ -1,8 +1,9 @@
 "use client";
-import styles from "./Button.module.css";
-import primaryButtonStyles from "./PrimaryButton.module.css";
 
-export default function PrimaryButton({
+import styles from "./Button.module.css";
+import tertiaryButtonStyles from "./TertiaryButton.module.css";
+
+export default function TertiaryButton({
   text,
   onClickAction,
 }: {
@@ -12,7 +13,7 @@ export default function PrimaryButton({
   return (
     <button
       onClick={onClickAction}
-      className={[styles.button, primaryButtonStyles.button].join(" ")}
+      className={[styles.button, tertiaryButtonStyles.button].join(" ")}
     >
       {text}
     </button>

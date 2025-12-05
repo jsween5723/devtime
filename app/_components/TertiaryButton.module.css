@@ -1,0 +1,9 @@
+.button {
+    background-color: var(--background-gray-light);
+    color: var(--text-primary);
+
+    &:disabled {
+        background-color: var(--background-disabled);
+        color: var(--text-disabled-400);
+    }
+}
