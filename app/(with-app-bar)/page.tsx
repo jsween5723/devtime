@@ -1,3 +1,10 @@
-export default function Home() {
-  return <>타이머</>;
+import PrimaryButton from "@/app/_components/PrimaryButton";
+
+export default function Page() {
+  return (
+    <>
+      타이머
+      <PrimaryButton text={"asd"} onClickAction={() => {}} />
+    </>
+  );
 }
