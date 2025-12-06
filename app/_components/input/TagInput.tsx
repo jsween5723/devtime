@@ -1,15 +1,15 @@
 "use client";
 
-import InputLabel from "@/app/_components/input/InputLabel";
 import TextButton from "@/app/_components/button/TextButton";
 import React from "react";
+import TextFieldInput from "@/app/_components/input/TextFieldInput";
 
 type Props = {
-  name: string;
-  onSubmitAction: React.MouseEventHandler<HTMLButtonElement>;
-  onChangeAction: React.ChangeEventHandler<HTMLInputElement>;
-  value: string | number;
-  buttonText: string;
+  name?: string;
+  onSubmitAction?: React.MouseEventHandler<HTMLButtonElement>;
+  onChangeAction?: React.ChangeEventHandler<HTMLInputElement>;
+  value?: string | number;
+  buttonText?: string;
   placeholder?: string;
 };
 
@@ -22,7 +22,7 @@ export default function TagInput({
   placeholder = "Placeholder",
 }: Props) {
   return (
-    <InputLabel
+    <TextFieldInput
       id={name}
       type={"text"}
       placeholder={placeholder}
@@ -35,6 +35,6 @@ export default function TagInput({
       >
         {buttonText}
       </TextButton>
-    </InputLabel>
+    </TextFieldInput>
   );
 }

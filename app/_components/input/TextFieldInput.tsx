@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import styles from "./InputLabel.module.css";
+import styles from "./TextFieldInput.module.css";
 
 type Props = {
   id?: string;
@@ -12,7 +12,7 @@ type Props = {
   children?: React.ReactNode;
 };
 
-export default function InputLabel({ children, ...others }: Props) {
+export default function TextFieldInput({ children, ...others }: Props) {
   return (
     <section className={styles.container}>
       <label className={styles.label} htmlFor={others.id}>
