@@ -1,14 +1,14 @@
 "use client";
+import React from "react";
 import styles from "./Button.module.css";
 import primaryButtonStyles from "./PrimaryButton.module.css";
 
-export default function PrimaryButton({
-  text,
-  onClickAction,
-}: {
+type Props = {
   text: string;
-  onClickAction?: () => void;
-}) {
+  onClickAction?: React.MouseEventHandler<HTMLButtonElement>;
+};
+
+export default function PrimaryButton({ text, onClickAction }: Props) {
   return (
     <button
       onClick={onClickAction}

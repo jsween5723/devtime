@@ -2,14 +2,14 @@
 
 import styles from "./Button.module.css";
 import tertiaryButtonStyles from "./TertiaryButton.module.css";
+import React from "react";
 
-export default function TertiaryButton({
-  text,
-  onClickAction,
-}: {
+type Props = {
   text: string;
-  onClickAction?: () => void;
-}) {
+  onClickAction?: React.MouseEventHandler<HTMLButtonElement>;
+};
+
+export default function TertiaryButton({ text, onClickAction }: Props) {
   return (
     <button
       onClick={onClickAction}
