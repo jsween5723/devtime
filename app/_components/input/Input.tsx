@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import styles from "./TextField.module.css";
+import styles from "./Input.module.css";
 
 type Props = {
   id?: string;
