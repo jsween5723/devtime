@@ -1,0 +1,13 @@
+.button {
+    padding: 0;
+    color: var(--text-primary);
+    font-weight: var(--bold);
+    font-size: var(--body-px);
+    line-height: var(--body-lh);
+    background: none;
+    outline: none;
+    border: none;
+    :disabled {
+        color: var(--text-disabled-400);
+    }
+}
