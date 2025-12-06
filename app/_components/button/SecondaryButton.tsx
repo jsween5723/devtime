@@ -4,17 +4,23 @@ import secondaryButtonStyles from "./SecondaryButton.module.css";
 import React from "react";
 
 type Props = {
-  text: string;
+  children?: React.ReactNode;
   onClickAction?: React.MouseEventHandler<HTMLButtonElement>;
+  type?: "button" | "submit" | "reset";
 };
 
-export default function PrimaryButton({ text, onClickAction }: Props) {
+export default function SecondaryButton({
+  children,
+  onClickAction,
+  type,
+}: Props) {
   return (
     <button
       onClick={onClickAction}
       className={[styles.button, secondaryButtonStyles.button].join(" ")}
+      type={type}
     >
-      {text}
+      {children}
     </button>
   );
 }

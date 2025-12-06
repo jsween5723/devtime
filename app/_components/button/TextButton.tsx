@@ -6,7 +6,7 @@ import styles from "./TextButton.module.css";
 type Props = {
   children?: React.ReactNode;
   onClickAction?: React.MouseEventHandler<HTMLButtonElement>;
-  disabled?: boolean;
+  disabled: boolean;
 };
 
 export default function TextButton({
