@@ -5,7 +5,7 @@ import styles from "./Input.module.css";
 
 type Props = {
   id?: string;
-  type?: "text" | "password" | "file" | "dropdown";
+  type?: "text" | "password" | "file" | "dropdown" | "hidden";
   onChangeAction: React.ChangeEventHandler<HTMLInputElement>;
   placeholder?: string;
   value: any;
