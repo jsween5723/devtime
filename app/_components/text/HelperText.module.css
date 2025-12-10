@@ -1,0 +1,17 @@
+.p {
+    font-weight: var(--medium);
+    font-size: var(--caption-px);
+    line-height: var(--caption-lh);
+}
+
+.error {
+    color: var(--feedback-negative);
+}
+
+.success {
+    color: var(--feedback-positive);
+}
+
+.info {
+    color: var(--feedback-informative);
+}

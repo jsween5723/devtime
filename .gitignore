@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+/.idea/.gitignore
+/.idea/deployment.xml
+/.idea/devtime.iml
+/.idea/jsLinters/eslint.xml
+/.idea/material_theme_project_new.xml
+/.idea/modules.xml
+/.idea/prettier.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
+
+*storybook.log
+storybook-static

@@ -1,0 +1,26 @@
+.input {
+    background: none;
+    font-size: var(--body-px);
+    line-height: var(--body-lh);
+    font-weight: var(--medium);
+    color: var(--text-g600);
+    outline: none;
+    border: none;
+
+    &::placeholder {
+        color: var(--text-disabled-300);
+    }
+
+    &:focus {
+        color: var(--text-g800);
+    }
+}
+
+.section {
+    padding: 16px 24px;
+    background-color: var(--background-gray-dark);
+    border: none;
+    border-radius: var(--radius-medium);
+    display: flex;
+    gap: 16px;
+}

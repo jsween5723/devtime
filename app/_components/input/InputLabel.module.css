@@ -1,0 +1,6 @@
+.label {
+    color: var(--text-g600);
+    font-size: var(--label-px);
+    line-height: var(--label-lh);
+    font-weight: var(--medium);
+}
